@@ -1,0 +1,114 @@
+.best {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1480px; 
+    background: rgb(73, 70, 70);
+    -moz-box-shadow: 15px 21px 58px -2px rgba(0,0,0,0.56);
+    box-shadow: 15px 21px 58px -2px rgba(0,0,0,0.56);    
+}
+
+.best__list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 40px 20px 20px 10px;
+}
+
+.best__list:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    border-right: 3px solid #ffffffab;
+    height: 80%;
+}
+
+.best__item {
+    position: relative;
+    background-color:rgba(0,0,0,.3);
+    width: 270px;
+    height: 170px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 30px 10px 0;
+    transition: .2s;
+    visibility: visible;
+    animation-name: fadeInLeft;
+
+}
+
+.best__item-img:hover {
+    opacity: 1;
+}
+
+.best__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity:.25;
+    transition: .2s
+}
+
+.best__item-ing:hover {
+    transition:  0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+}
+
+.best__item-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffffab;
+    z-index: 2;
+}
+
+.best__item:hover .best__item-title {
+    left: 999999px
+}
+
+.best__item-description {
+    position: absolute;
+    top: 50%;
+    left: -999999px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #ffffffab;
+}
+
+.best__item:hover .best__item-description {
+    left: 50%;
+}
+
+.best__list-right {
+    padding: 40px 10px 10px 10px;
+}
+
+.best__title {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;;
+}
+
+.best__list-right__item {
+    visibility: visible;
+    animation-name: zoomInRight;
+    margin-bottom: 25px;
+}
+
+.best__list-right__item-link {
+    color: #ffffffab;
+    transition: .4s
+}
+
+.best__list-right__item-link:hover {
+    color: #ffffff
+}
+

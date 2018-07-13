@@ -1,0 +1,55 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Myriad-Web", Arial, Helvetica, sans-serif;
+    position: relative;
+    background: url('../img/slider/back.jpg') center center / cover repeat;
+    background: rgb(31, 31, 31);
+    color: #ffffffab
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1480px; 
+}
+
+.maincontent {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+.section {
+    max-width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+} 
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    margin: 0;
+}
